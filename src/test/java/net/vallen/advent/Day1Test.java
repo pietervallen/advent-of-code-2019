@@ -1,12 +1,12 @@
 package net.vallen.advent;
 
-import org.assertj.core.util.Lists;
 import org.hamcrest.MatcherAssert;
 import org.junit.Test;
+
 import java.util.List;
 
-import static org.hamcrest.MatcherAssert.*;
-import static org.hamcrest.core.Is.*;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.core.Is.is;
 
 public class Day1Test {
 
@@ -39,13 +39,13 @@ public class Day1Test {
 
         MatcherAssert.assertThat(Day1.calculateFuelForFuel(FuelForMass12), is(0));
         MatcherAssert.assertThat(Day1.calculateFuelForFuel(FuelForMass14), is(0));
-        MatcherAssert.assertThat(Day1.calculateFuelForFuel(FuelForMass1969), is(966-654));
-        MatcherAssert.assertThat(Day1.calculateFuelForFuel(FuelForMass100756), is(50346-33583));
+        MatcherAssert.assertThat(Day1.calculateFuelForFuel(FuelForMass1969), is(966 - 654));
+        MatcherAssert.assertThat(Day1.calculateFuelForFuel(FuelForMass100756), is(50346 - 33583));
     }
 
     @Test
     public void testCalculateFuelForListOfMassesDay1() {
-        List<Integer>  masses = List.of(0, 12, 14, 1969, 100756);
-        MatcherAssert.assertThat(Day1.calculateFuel(masses), is(2 + 2 + 966 + 50346 ));
+        List<Integer> masses = List.of(0, 12, 14, 1969, 100756);
+        MatcherAssert.assertThat(Day1.calculateFuel(masses), is(2 + 2 + 966 + 50346));
     }
 }

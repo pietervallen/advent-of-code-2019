@@ -3,10 +3,8 @@ package net.vallen.advent;
 import org.assertj.core.util.Lists;
 import org.hamcrest.MatcherAssert;
 import org.junit.Test;
-import java.util.List;
 
-import static org.hamcrest.MatcherAssert.*;
-import static org.hamcrest.core.Is.*;
+import static org.hamcrest.core.Is.is;
 
 public class Day2Test {
 

@@ -1,14 +1,8 @@
 package net.vallen.advent;
 
 import org.hamcrest.MatcherAssert;
-import org.javatuples.Pair;
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
-import static net.vallen.advent.Day3.getPairListFromLine;
 import static org.hamcrest.core.Is.is;
 
 public class Day4Test {

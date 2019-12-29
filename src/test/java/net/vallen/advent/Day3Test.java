@@ -1,7 +1,5 @@
 package net.vallen.advent;
 
-import org.assertj.core.util.Lists;
-import org.hamcrest.CoreMatchers;
 import org.hamcrest.MatcherAssert;
 import org.javatuples.Pair;
 import org.junit.Test;
@@ -91,9 +89,6 @@ public class Day3Test {
         result.add(new Coordinate(start.getX(), start.getY() - 2, ++totalSteps));
         result.add(new Coordinate(start.getX(), start.getY() - 3, ++totalSteps));
 
-//        for (Coordinate coordinate: result) {
-//            System.out.println("Coordinate: " + coordinate);
-//        }
         Collections.sort(result);
         MatcherAssert.assertThat(Day3.calculatePath(getPairListFromLine(path1)), is(result));
 
