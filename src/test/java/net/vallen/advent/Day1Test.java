@@ -19,28 +19,28 @@ public class Day1Test {
 
     @Test
     public void testCalculateFuelForMassDay1() {
-        Integer FuelForMass12 = Day1.calculateFuelForMass(12);
-        Integer FuelForMass14 = Day1.calculateFuelForMass(14);
-        Integer FuelForMass1969 = Day1.calculateFuelForMass(1969);
-        Integer FuelForMass100756 = Day1.calculateFuelForMass(100756);
+        Integer fuelForMass12 = Day1.calculateFuelForMass(12);
+        Integer fuelForMass14 = Day1.calculateFuelForMass(14);
+        Integer fuelForMass1969 = Day1.calculateFuelForMass(1969);
+        Integer fuelForMass100756 = Day1.calculateFuelForMass(100756);
 
-        assertThat(FuelForMass12, is(2));
-        assertThat(FuelForMass14, is(2));
-        assertThat(FuelForMass1969, is(654));
-        assertThat(FuelForMass100756, is(33583));
+        assertThat(fuelForMass12, is(2));
+        assertThat(fuelForMass14, is(2));
+        assertThat(fuelForMass1969, is(654));
+        assertThat(fuelForMass100756, is(33583));
     }
 
     @Test
     public void testCalculateFuelForFuelDay1() {
-        Integer FuelForMass12 = Day1.calculateFuelForMass(12);
-        Integer FuelForMass14 = Day1.calculateFuelForMass(14);
-        Integer FuelForMass1969 = Day1.calculateFuelForMass(1969);
-        Integer FuelForMass100756 = Day1.calculateFuelForMass(100756);
+        Integer fuelForMass12 = Day1.calculateFuelForMass(12);
+        Integer fuelForMass14 = Day1.calculateFuelForMass(14);
+        Integer fuelForMass1969 = Day1.calculateFuelForMass(1969);
+        Integer fuelForMass100756 = Day1.calculateFuelForMass(100756);
 
-        MatcherAssert.assertThat(Day1.calculateFuelForFuel(FuelForMass12), is(0));
-        MatcherAssert.assertThat(Day1.calculateFuelForFuel(FuelForMass14), is(0));
-        MatcherAssert.assertThat(Day1.calculateFuelForFuel(FuelForMass1969), is(966 - 654));
-        MatcherAssert.assertThat(Day1.calculateFuelForFuel(FuelForMass100756), is(50346 - 33583));
+        MatcherAssert.assertThat(Day1.calculateFuelForFuel(fuelForMass12), is(0));
+        MatcherAssert.assertThat(Day1.calculateFuelForFuel(fuelForMass14), is(0));
+        MatcherAssert.assertThat(Day1.calculateFuelForFuel(fuelForMass1969), is(966 - 654));
+        MatcherAssert.assertThat(Day1.calculateFuelForFuel(fuelForMass100756), is(50346 - 33583));
     }
 
     @Test
