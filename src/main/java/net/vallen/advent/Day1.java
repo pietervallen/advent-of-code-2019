@@ -9,7 +9,7 @@ public class Day1 {
         System.out.println("The sum of the fuel requirements for all of the modules on your spacecraft: " + calculateFuel(masses));
     }
 
-    public static Integer calculateFuelForMass(Integer fuel) {
+    static Integer calculateFuelForMass(Integer fuel) {
         return Math.max(0, fuel / 3 - 2);
     }
 

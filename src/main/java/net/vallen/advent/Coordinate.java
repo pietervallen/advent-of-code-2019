@@ -1,23 +1,25 @@
 package net.vallen.advent;
 
 public class Coordinate implements Comparable<Coordinate>{
-    private int x, y, steps;
+    private int x;
+    private int y;
+    private int steps;
 
-    public Coordinate(int x, int y, int steps) {
+    Coordinate(int x, int y, int steps) {
         this.x = x;
         this.y = y;
         this.steps = steps;
     }
 
-    public Integer getX() {
+    Integer getX() {
         return x;
     }
 
-    public Integer getY() {
+    Integer getY() {
         return y;
     }
 
-    public Integer getSteps() {
+    Integer getSteps() {
         return steps;
     }
 

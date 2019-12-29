@@ -17,7 +17,7 @@ public class Day3 {
         System.out.println("The Manhattan distance is: " + manhattenDistance(inputDay3firstWire, inputDay3secondWire));
     }
 
-    public static Pair<Integer, Integer> manhattenDistance(String path1, String path2) {
+    static Pair<Integer, Integer> manhattenDistance(String path1, String path2) {
         List<Coordinate> beenTherePath1;
         List<Coordinate> beenTherePath2;
 

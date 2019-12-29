@@ -10,7 +10,6 @@ public class Day4 {
     }
 
     private static Long getNumberofCombinations(int start, int end) {
-
         return range(start, end)
                 .filter(combination -> containsDoubles(combination) && isIncremental(combination))
                 .count();
@@ -39,14 +38,12 @@ public class Day4 {
                 counter = 1;
             }
             if (i + 2 == chars.length) {
-                if (Integer.valueOf(chars[i + 1]).equals((int) pendingNumber)) {          // 2 characters match
-                    counter++;
-                }
+                // 2 characters match
+                if (Integer.valueOf(chars[i + 1]).equals((int) pendingNumber)) counter++;
                 return counter == 2  || doubleFound;
             }                               // no more characters left return true is count = 2
-            else if (Integer.valueOf(chars[i + 1]).equals((int) pendingNumber)) {          // 2 characters match
-                counter++;
-            }
+            else // 2 characters match
+                if (Integer.valueOf(chars[i + 1]).equals((int) pendingNumber)) counter++;
             previousNumber = pendingNumber;
         }
         return counter == 2;
